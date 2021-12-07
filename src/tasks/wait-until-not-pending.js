@@ -1,5 +1,5 @@
 const retry = require('oh-no-i-insist');
-module.exports = function waitUntilNotPending(lambda, functionName, timeout, retries) {
+module.exports = await function waitUntilNotPending(lambda, functionName, timeout, retries) {
 	'use strict';
 	return retry(
 		() => {
